@@ -3,9 +3,9 @@ Theme Name: Netflix
 Author: Kenzie Academy
 Author URI: kenzie.com.br;
 Version: 1.0
- 
+
 --------------------------------------------
-SUGESTÃO DE ESTRUTURAÇÃO BASE 
+SUGESTÃO DE ESTRUTURAÇÃO BASE
 --------------------------------------------
 **** RESET
 **** DECLARAÇÃO DE VARIÁVEIS
@@ -16,17 +16,11 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 */
 
 /* RESET */
-* {
-	margin: 0;
-	border: 0;
-	padding: 0;
-
-}
 
 
 /* VARIÁVEIS */
 :root{
-	--color-black:#141414;
+	--bg-color:#00002e;
 	--color-white: #ffffff;
 	--color-grey: rgb(143, 143, 143);
 	--font-default: 'Helvetica Neue',Helvetica,Arial,sans-serif;
@@ -34,7 +28,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /*BODY*/
 	body{
-			background-color: var(--color-black);
+			background-color: var(--bg-color);
 			color: var(--color-white);
 			height: 100vh;
 			display: flex;
@@ -42,7 +36,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 			align-content: center;
 			align-items: center;
 			font-family: var(--font-default);
-	}		
+	}
 
 /*TOPO*/
 	.topo{
@@ -53,9 +47,13 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		left: 0;
 	}
 
+	.topo img{
+		width: 200px;
+	}
+
 	.figcaption{
 		display: none;
-	}	
+	}
 /*RODAPÉ*/
 
 	.pg-home__footer{
@@ -74,25 +72,26 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	.pg-home__footer .pg-home__button:hover{
 		border: 2px solid var(--color-white);
 	}
-	
+
 
 /*PÁGINA INICIAL*/
 	.pg-home{
-		width: 858px;
+		max-width: 858px;
+		width: 100%;
 		height: 80vh;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
 		align-items: center;
 	}
-	
+
 	.pg-home__header{
 		display: flex;
 		align-items:flex-end;
-		width: max-content;		
+		width: max-content;
 		height: 25%;
 		font-family: 'Inter', sans-serif;
-		font-size: 30px;
+		font-size: 24px;
 		letter-spacing: 3px;
 	}
 
@@ -137,7 +136,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	}
 
 	.pg-home__li.pg-home__li--addPerfil img{
-		max-width: 60%;
+
 		padding: 20%;
 	}
 
@@ -148,15 +147,65 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		height: 186px;
 	}
 
+@media only screen and (max-width: 425px)
+	{
+	  .topo{
+		  width: 30%;
+		  margin: 1% auto;
+		  position: absolute;
+		  left: 50%;
+		  transform: translateX(-50%);
+	  }
 
-	@media only screen and (max-width: 768px)
-  {
+	  .topo img{
+		  width: 100px;
+	  }
+
+	  .pg-home{
+		  width: 90vw;
+		  height: 98vh;
+	  }
+
+	  .pg-home__header{
+		  font-size: 20px;
+		  letter-spacing: 1px;
+		  align-items:center;
+		  height: 15%;
+		  margin-top: 15px;
+	  }
+
+	  .pg-home__footer .pg-home__button{
+		  padding: 5px 20px;
+		  font-size: 10px;
+		  margin-top: 10%;
+	  }
+
+	  .pg-home__ul{
+		  flex-direction: column;
+		  height: 80%;
+		  justify-content: space-between;
+		  align-items: center;
+		  list-style: none;
+	  }
+
+	  .pg-home__li{
+		  justify-content: space-around;
+		  font-size: 0.6em;
+	  }
+
+	  .pg-home__li figure{
+		  width: 65px;
+		  height: 65px;
+	  }
+}
+
+@media only screen and (max-width: 768px){
 	.pg-home{
-		width: 60vw;
+		width: 80vw;
 	}
 
 	.pg-home__header{
-		font-size: 15px;
+		font-size: 18px;
 		letter-spacing: 3px;
 	}
 
@@ -171,57 +220,9 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	}
 
 	.pg-home__li figure{
-		width: 100px;
-		height: 100px;
+		width: 95px;
+		height: 95px;
 	}
   }
-
-  @media only screen and (max-width: 425px)
-  {
-	.topo{
-		width: 30%;
-		margin: 5% auto;
-		position: absolute;
-		left: 50%;
-		transform: translateX(-50%);
-	}
-
-	.pg-home{
-		width: 60vw;
-		height: 90vh;
-	}
-
-	.pg-home__header{
-		font-size: 12px;
-		letter-spacing: 1px;
-		align-items:center;
-		height: 15%;
-	}
-
-	.pg-home__footer .pg-home__button{
-		padding: 5px 20px;
-		font-size: 10px;
-		margin-top: 10%;
-	}
-
-	.pg-home__ul{
-		flex-direction: column;
-		height: 75%;
-		justify-content: space-between;
-		align-items: center;
-		list-style: none;
-	}
-
-	.pg-home__li{
-		justify-content: space-around;
-		font-size: 0.6em;
-	}
-
-	.pg-home__li figure{
-		width: 70px;
-		height: 70px;
-	}
-  }
-
 
 
