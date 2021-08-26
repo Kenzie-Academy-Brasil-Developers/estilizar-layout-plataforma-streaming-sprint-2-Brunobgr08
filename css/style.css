@@ -114,7 +114,8 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		color: var(--color-grey);
 		list-style-type: none;
 		text-align: center;
-		height: 220px;
+		width: 186px;
+		height: 186px;
 		font-size: 1em;
 	}
 
@@ -143,8 +144,9 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	.pg-home__li figure{
 		display: flex;
 		flex-direction: column;
-		width: 186px;
-		height: 186px;
+		width: 160px;
+		height: 160px;
+		margin-bottom: 10px;
 	}
 
 @media only screen and (max-width: 425px)
@@ -191,6 +193,8 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	  .pg-home__li{
 		  justify-content: space-around;
 		  font-size: 0.6em;
+		  width: 186px;
+		  height: 186px;
 	  }
 
 	  .pg-home__li figure{
