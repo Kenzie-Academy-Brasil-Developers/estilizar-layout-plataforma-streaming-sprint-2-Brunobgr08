@@ -65,7 +65,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		border: 1px solid var(--color-grey);
 		padding: 5px 20px;
 		background: var(--color-black);
-		font-size: 20px;
+		font-size: 18px;
 		text-transform: uppercase;
 	}
 
@@ -88,11 +88,15 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	.pg-home__header{
 		display: flex;
 		align-items:flex-end;
-		width: max-content;
+		width: auto;
 		height: 25%;
 		font-family: 'Inter', sans-serif;
 		font-size: 24px;
 		letter-spacing: 3px;
+	}
+
+	.pg-home__header h2{
+		text-align: center;
 	}
 
 	.pg-home__ul{
@@ -152,11 +156,11 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 @media only screen and (max-width: 425px)
 	{
 	  .topo{
-		  width: 30%;
-		  margin: 1% auto;
-		  position: absolute;
-		  left: 50%;
-		  transform: translateX(-50%);
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: flex-start;
 	  }
 
 	  .topo img{
@@ -209,12 +213,12 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	}
 
 	.pg-home__header{
-		font-size: 18px;
+		font-size: 0.8em;
 		letter-spacing: 3px;
 	}
 
 	.pg-home__footer .pg-home__button{
-		padding: 5px 20px;
+		padding: 5px 10px;
 		font-size: 10px;
 	}
 
